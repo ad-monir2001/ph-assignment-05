@@ -27,7 +27,6 @@ donationPage.addEventListener('click', function () {
 
 document.getElementById('donation_btn').addEventListener('click', function () {
   donated('noakhali-input', 'noakhali-total', 'donation-noakhali');
-
 });
 
 document
@@ -41,3 +40,11 @@ document
   .addEventListener('click', function () {
     donated('quota-input', 'quota-total', 'donation-quota');
   });
+
+document.getElementById('blog-el').addEventListener('click', function () {
+  window.location.href = '/blog.html';
+});
+
+document.getElementById('homeBtn').addEventListener('click', function () {
+  window.location.href = '../index.html';
+});

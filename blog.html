@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- some common style -->
+    <style>
+      .lexend {
+        font-family: 'Lexend', sans-serif;
+      }
+      .primary_btn_bg {
+        background-color: #b4f461;
+      }
+    </style>
+    <title>Donate Bangladesh</title>
+  </head>
+  <body class="lexend">
+    <nav class="sticky top-0 bg-white backdrop-blur-md pb-8">
+      <!-- heading -->
+      <div class="bg-[#F9F7F3] py-3 md:py-6">
+        <div
+          class="navbar container mx-auto flex flex-col items-center gap-2 md:flex-row md:justify-between"
+        >
+          <div class="order-3 md:order-1">
+            <div class="dropdown">
+              <button
+                id="homeBtn"
+                class="btn primary_btn_bg text-xl font-semibold px-8"
+              >
+                Home
+              </button>
+            </div>
+          </div>
+          <div class="order-1 mb-4 md:mb-0">
+            <h1 class="flex items-center gap-4 text-xl font-semibold">
+              <img src="./assets/logo.png" alt="" />Donate Bangladesh
+            </h1>
+          </div>
+          <div class="order-2">
+            <h1 class="flex items-center gap-3 text-xl font-medium">
+              <img src="./assets/coin.png" alt="" /><span id="balance-el"
+                >98600</span
+              >BDT
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <footer class="bg-[#F9F7F3] h-24"></footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/features.js"></script>
+  </body>
+</html>

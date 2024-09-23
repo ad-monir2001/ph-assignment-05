@@ -16,6 +16,7 @@ function donated(inp, have, place) {
 
   if (isNaN(inputNumber) || inputNumber <= 0 || inputNumber > balanceNumber) {
     alert('Please enter valid number');
+    document.getElementById(inp).value = '';
     return;
   } else {
     const time = new Date();
