@@ -42,7 +42,7 @@ document
   });
 
 document.getElementById('blog-el').addEventListener('click', function () {
-  window.location.href = '/blog.html';
+  window.location.href = '../blog.html';
 });
 
 
