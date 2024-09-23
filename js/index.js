@@ -45,6 +45,4 @@ document.getElementById('blog-el').addEventListener('click', function () {
   window.location.href = '/blog.html';
 });
 
-document.getElementById('homeBtn').addEventListener('click', function () {
-  window.location.href = '../index.html';
-});
+
