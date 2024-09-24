@@ -9,7 +9,6 @@ function idleBtn(id) {
 function donated(inp, have, place) {
   const donationPlace = document.getElementById(place).innerText;
   const inputEl = document.getElementById(inp).value;
-  console.log(inputEl);
   const inputNumber = parseFloat(document.getElementById(inp).value);
   const balanceNumber = parseFloat(balance.innerText);
   const donationAmountTotal = parseFloat(
