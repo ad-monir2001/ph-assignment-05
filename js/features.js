@@ -8,13 +8,20 @@ function idleBtn(id) {
 
 function donated(inp, have, place) {
   const donationPlace = document.getElementById(place).innerText;
+  const inputEl = document.getElementById(inp).value;
+  console.log(inputEl);
   const inputNumber = parseFloat(document.getElementById(inp).value);
   const balanceNumber = parseFloat(balance.innerText);
   const donationAmountTotal = parseFloat(
     document.getElementById(have).innerText
   );
 
-  if (isNaN(inputNumber) || inputNumber <= 0 || inputNumber > balanceNumber) {
+  if (
+    isNaN(inputNumber) ||
+    isNaN(inputEl) ||
+    inputNumber <= 0 ||
+    inputNumber > balanceNumber
+  ) {
     alert('Please enter valid number');
     document.getElementById(inp).value = '';
     return;
